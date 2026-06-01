@@ -64,37 +64,43 @@
                 <!-- ความเผ็ด -->
                 <div id="blockSpicy" class="hidden">
                     <p class="font-bold mb-2 text-sm"><i class="fa-solid fa-pepper-hot text-red-500 mr-1"></i> ระดับความเผ็ด</p>
-                    <div class="grid grid-cols-3 gap-2 text-sm">
+                    <div class="grid grid-cols-4 gap-1 text-sm">
                         <label class="cursor-pointer"><input type="radio" name="mSpicy" value="ไม่เผ็ด" class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">ไม่เผ็ด</div></label>
                         <label class="cursor-pointer"><input type="radio" name="mSpicy" value="เผ็ดน้อย" class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">เผ็ดน้อย</div></label>
-                        <label class="cursor-pointer"><input type="radio" name="mSpicy" value="เผ็ดปกติ" checked class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">เผ็ดปกติ</div></label>
+                        <label class="cursor-pointer"><input type="radio" name="mSpicy" value="ปกติ" checked class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">เผ็ดปกติ</div></label>
+                        <label class="cursor-pointer"><input type="radio" name="mSpicy" value="เผ็ดมาก" checked class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">เผ็ดปกติ</div></label>
                     </div>
                 </div>
 
-                <!-- วิธีเสิร์ฟ -->
+                <!-- เสิร์ฟ -->
                 <div id="blockRice" class="hidden">
                     <p class="font-bold mb-2 text-sm"><i class="fa-solid fa-bowl-rice text-amber-600 mr-1"></i> วิธีเสิร์ฟ</p>
                     <div class="grid grid-cols-2 gap-2 text-sm">
                         <label class="cursor-pointer"><input type="radio" name="mRice" value="ราดข้าว" checked class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">ราดข้าว</div></label>
-                        <label class="cursor-pointer"><input type="radio" name="mRice" value="เป็นกับข้าว" class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">เป็นกับข้าว (+20฿)</div></label>
+                        <label class="cursor-pointer"><input type="radio" name="mRice" value="เป็นกับข้าว" class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">เป็นกับข้าว (+30.-)</div></label>
                     </div>
                 </div>
 
-                <!-- ขนาด -->
+                <!-- พิเศษ -->
                 <div id="blockSpecial" class="hidden">
                     <p class="font-bold mb-2 text-sm">ขนาด</p>
-                    <div class="grid grid-cols-2 gap-2 text-sm">
+                    <div class="grid grid-cols-3 gap-2 text-sm">
                         <label class="cursor-pointer"><input type="radio" name="mSize" value="ธรรมดา" checked class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">ธรรมดา</div></label>
-                        <label class="cursor-pointer"><input type="radio" name="mSize" value="พิเศษ" class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">พิเศษ (+10฿)</div></label>
+                        <label class="cursor-pointer"><input type="radio" name="mSize" value="เพิ่มเนื้อสัตว์" class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">เพิ่มเนื้อสัตว์ (+10.-)</div></label>
+                        <label class="cursor-pointer"><input type="radio" name="mSize" value="เพิ่มข้าว" class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">เพิ่มข้าว (+10.-)</div></label>
                     </div>
                 </div>
 
                 <!-- ไข่ดาว -->
                 <div id="blockEgg" class="hidden">
-                    <p class="font-bold mb-2 text-sm"><i class="fa-solid fa-egg text-yellow-500 mr-1"></i> เพิ่มไข่ดาวหรือไม่</p>
-                    <div class="grid grid-cols-2 gap-2 text-sm">
-                        <label class="cursor-pointer"><input type="radio" name="mEgg" value="ไม่รับไข่" checked class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">ไม่รับ</div></label>
-                        <label class="cursor-pointer"><input type="radio" name="mEgg" value="ไข่ดาว" class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">ไข่ดาว (+10฿)</div></label>
+                    <p class="font-bold mb-2 text-sm"><i class="fa-solid fa-egg text-yellow-500 mr-1"></i> เพิ่มไข่ดาว/ไข่เจียว/ไข่ข้น</p>
+                    <div class="grid grid-cols-3 gap-2 text-sm">
+                        <label class="cursor-pointer"><input type="radio" name="mEgg" value="ไข่ดาวไม่สุก" class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">ไข่ดาวไม่สุก (+10.-)</div></label>
+                        <label class="cursor-pointer"><input type="radio" name="mEgg" value="ไข่ดาวสุก" class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">ไข่ดาวสุก (+10.-)</div></label>
+                        <label class="cursor-pointer"><input type="radio" name="mEgg" value="ไข่เจียว" class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">ไข่เจียว (+15.-)</div></label>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                        <label class="cursor-pointer"><input type="radio" name="mEgg" value="ไข่ข้น" class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">ไข่ข้น (+20฿)</div></label>
+                        <label class="cursor-pointer"><input type="radio" name="mEgg" value="ไม่รับ" checked class="peer sr-only"><div class="py-2 text-center rounded-xl border peer-checked:border-violet-500 peer-checked:bg-violet-50 peer-checked:text-violet-700 font-medium">ไม่รับ</div></label>
                     </div>
                 </div>
             </div>
@@ -121,8 +127,8 @@
 
             <div class="space-y-3 pt-2">
                 <div>
-                    <label class="block text-xs font-bold text-slate-500 mb-1">ระบุเบอร์โต๊ะ / ชื่อลูกค้า <span class="text-red-500">*</span></label>
-                    <input type="text" id="customerTable" placeholder="เช่น โต๊ะ 3 หรือ ชื่อของคุณ" class="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-violet-500">
+                    <label class="block text-xs font-bold text-slate-500 mb-1">จัดส่งที่.. / ชื่อลูกค้า <span class="text-red-500">*</span></label>
+                    <input type="text" id="customerTable" placeholder="เช่น เสนา ตึกA หรือ ชื่อของคุณ" class="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-violet-500">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-500 mb-1">วิธีชำระเงิน</label>
@@ -198,14 +204,19 @@
             }
         }
 
-        function renderMenu() {
+         function renderMenu() {
             const container = document.getElementById('menuContainer');
-            container.innerHTML = rawMenu.map((item, index) => `
+            container.innerHTML = rawMenu.map((item, index) => {
+                // เช็กว่ามีชื่อภาษาอังกฤษไหม ถ้ามีให้แสดง ถ้าไม่มีให้ว่างไว้
+                const engName = item.NameEN ? `<p class="text-[11px] text-slate-500 -mt-0.5 line-clamp-1">${item.NameEN}</p>` : '';
+                
+                return `
                 <div class="bg-white rounded-2xl p-3 flex gap-3 shadow-sm border border-slate-100" onclick="openFoodModal(${index})">
                     <img src="${item.Image || 'https://placehold.co/100x100?text=Food'}" class="w-24 h-24 rounded-xl object-cover bg-slate-50 shrink-0">
                     <div class="flex-1 py-1 flex flex-col justify-between">
                         <div>
-                            <h4 class="font-bold text-slate-800 text-sm line-clamp-2">${item.Name}</h4>
+                            <h4 class="font-bold text-slate-800 text-sm line-clamp-1">${item.Name}</h4>
+                            ${engName}
                             <p class="text-xs text-slate-400 mt-1 line-clamp-1">${item.Category || ''}</p>
                         </div>
                         <div class="flex justify-between items-end">
@@ -216,12 +227,12 @@
                         </div>
                     </div>
                 </div>
-            `).join('');
+            `}).join('');
         }
 
         function openFoodModal(index) {
             activeFood = rawMenu[index];
-            document.getElementById('modalFoodName').innerText = activeFood.Name;
+            document.getElementById('modalFoodName').innerHTML = activeFood.Name;
 
             document.getElementById('blockSpicy').style.display = (activeFood.NeedSpicy === true || activeFood.NeedSpicy === "TRUE") ? 'block' : 'none';
             document.getElementById('blockRice').style.display = (activeFood.CanWithRice === true || activeFood.CanWithRice === "TRUE") ? 'block' : 'none';
@@ -253,7 +264,7 @@
             if(document.getElementById('blockRice').style.display === 'block') {
                 let v = document.querySelector('input[name="mRice"]:checked').value;
                 optTexts.push(v);
-                if(v === "เป็นกับข้าว") basePrice += 20;
+                if(v === "เป็นกับข้าว") basePrice += 40;
             }
             if(document.getElementById('blockSpecial').style.display === 'block') {
                 let v = document.querySelector('input[name="mSize"]:checked').value;
@@ -337,7 +348,7 @@
                 const data = await res.json();
                 
                 if(data.status === 'success') {
-                    alert('🎉 ส่งออเดอร์สำเร็จ!\nตรวจสอบใบสรุปราคาสวยๆ ได้ในแชท LINE ร้านค้าได้ทันทีครับ');
+                    alert('🎉 ส่งออเดอร์สำเร็จ!\nตรวจสอบรายการ ได้ในแชท LINE ร้านค้าได้ทันทีครับ');
                     currentCart = [];
                     updateCartUI();
                     closeCheckout();
